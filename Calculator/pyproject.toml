@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "calculator"
+version = "0.1.0"
+description = ""
+authors = ["zoelinsg <zoelin.sg@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+kivy = "^2.3.0"
+kivymd = "^1.2.0"
+pillow = "^11.0.0"
+opencv-python = "^4.10.0.84"
+matplotlib = "^3.9.3"
+requests = "^2.32.3"
+pandas = "^2.2.3"
+buildozer = {extras = ["android"], version = "^1.5.0"}
+cython = "^3.0.11"
+pyinstaller = { version = "^6.11.1", python = ">=3.12,<3.14" }
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+black = "^24.10.0"
+flake8 = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
